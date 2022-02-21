@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 69%, 45%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --ligh-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Karla;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 16px;
+    background-color: var(--ligh-gray);
+}
+
+.container {
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+#community {
+    margin: 5rem 20rem;
+    border-radius: 0.6rem;
+}
+
+#community h1,
+#community h3 {
+    line-height: 3rem;
+}
+
+#community h4,
+#community p {
+    line-height: 1.5rem;
+}
+
+.top-box {
+    background-color: #fff;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.top-box h1 {
+    color: var(--cyan);
+}
+
+.top-box h3 {
+    color: var(--bright-yellow);
+}
+
+.top-box h4 {
+    color: var(--grayish-blue);
+}
+
+.bottom-left-box {
+    background-color: var(--cyan);
+    color: #fff;
+    border-bottom-left-radius: .5rem;
+}
+
+.price {
+    align-items: center;
+}
+
+.price-per-time {
+    color: var(--ligh-gray);
+    margin-left: .5rem;
+}
+
+.bottom-right-box {
+    background-color: var(--light-cyan);
+    border-bottom-right-radius: .5rem;
+}
+
+.bottom-right-box .text-box {
+    width: 15rem;
+}
+
+.bottom-right-box h3,
+.bottom-left-box h3 {
+    line-height: 3rem;
+    color: #fff;
+}
+
+.bottom-right-box p {
+    color: var(--ligh-gray);
+}
+
+.sign-up-btn {
+    width: 100%;
+    margin-top: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8rem 0;
+    background-color: var(--bright-yellow);
+    border-radius: .3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+#community,
+.sign-up-btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+
+    #community {
+        margin: 2.5rem 5rem;
+    }
+
+    #community h3 {
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .row:not(.price) {
+        display: inline;
+    }
+
+    .top-box {
+        width: 100%;
+    }
+
+    .bottom-left-box {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .bottom-right-box {
+        width: 100%;
+        border-bottom-left-radius: .5rem;
+    }
+}
