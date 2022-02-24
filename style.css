@@ -31,7 +31,7 @@ html {
 }
 
 #community {
-    max-width: 600px;
+    max-width: 550px;
     margin: 5rem auto;
     border-radius: 0.6rem;
 }
@@ -90,7 +90,7 @@ html {
 }
 
 .bottom-right-box .text-box {
-    width: 15rem;
+    max-width: 15rem;
 }
 
 .bottom-right-box h3,
@@ -119,9 +119,9 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width: 650px) {
-    .container {
-        padding: 1rem;
+@media (max-width: 550px) {
+    #community {
+        max-width: 90%;
     }
 
     .grid-2 {
