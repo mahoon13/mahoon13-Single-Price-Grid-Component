@@ -30,28 +30,24 @@ html {
     padding: 2rem;
 }
 
-.row {
-    display: flex;
-    width: 100%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
 #community {
-    margin: 5rem 20rem;
+    max-width: 600px;
+    margin: 5rem auto;
     border-radius: 0.6rem;
 }
 
 #community h1,
 #community h3 {
-    line-height: 3rem;
+    margin-bottom: 1rem;
 }
 
-#community h4,
-#community p {
+#community h4 {
     line-height: 1.5rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .top-box {
@@ -79,6 +75,7 @@ html {
 }
 
 .price {
+    display: flex;
     align-items: center;
 }
 
@@ -98,7 +95,6 @@ html {
 
 .bottom-right-box h3,
 .bottom-left-box h3 {
-    line-height: 3rem;
     color: #fff;
 }
 
@@ -123,35 +119,20 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width: 1000px) {
-    html {
-        font-size: 10px;
+@media (max-width: 650px) {
+    .container {
+        padding: 1rem;
     }
 
-    #community {
-        margin: 2.5rem 5rem;
-    }
-
-    #community h3 {
-        line-height: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .row:not(.price) {
-        display: inline;
-    }
-
-    .top-box {
-        width: 100%;
+    .grid-2 {
+        display: block;
     }
 
     .bottom-left-box {
-        width: 100%;
         border-radius: 0;
     }
 
     .bottom-right-box {
-        width: 100%;
         border-bottom-left-radius: .5rem;
     }
 }
